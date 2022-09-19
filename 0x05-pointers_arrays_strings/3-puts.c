@@ -3,7 +3,7 @@
 /**
  *_puts - prints string to stdoup
  *
- *@str: value used 
+ *@str: value used
  *
  *Return: void
  */
@@ -12,7 +12,7 @@ void _puts(char *str)
 {
 	int i;
 
-	for ( i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
