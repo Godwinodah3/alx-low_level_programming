@@ -3,7 +3,7 @@
 /**
  * string_toupper - converting lowercase to upper
  *
- *@*: values of string
+ *@u: values of string
  *
  *Return: void
  */
