@@ -1,24 +1,26 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * print_number - prints given number
- * @n: Number input
- * Return: void
- */
+ * print_number - Prints an integer.
+ *
+ * @n: The integer to be printed.
+*/
+
 void print_number(int n)
 {
-	unsigned int a = n;
+	unsigned int num = n;
 
+	/*first check if its negative*/
 	if (n < 0)
 	{
-		n *= -1;
-		a = n;
 		_putchar('-');
+		num = -num;
 	}
-	a /= 10;
 
-	if (a != 0)
-		print_number(a);
+	/*print the first few digits*/
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-	_putchar((unsigned int) n % 10 + '0');
+	/*print the last digit*/
+	_putchar((num % 10) + 48);
 }
